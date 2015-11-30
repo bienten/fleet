@@ -4,6 +4,12 @@ class View {
 
     private $data = array();
     private $path = './view/';
+    
+    public function __construct($path) {
+        if ($path) {
+            $this->path = $path;
+        }
+    }
 
     public function get($name) {
         return $this->data[$name];
