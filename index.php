@@ -1,7 +1,6 @@
 <?php
 
-require 'kernel/Router.php';
-require 'kernel/View.php';
+require 'kernel/autoload.php';
 
 $route = new Router();
 $view = new View();
