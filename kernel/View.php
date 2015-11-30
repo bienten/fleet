@@ -5,7 +5,7 @@ class View {
     private $data = array();
     private $path = './view/';
     
-    public function __construct($path) {
+    public function __construct($path = null) {
         if ($path) {
             $this->path = $path;
         }
