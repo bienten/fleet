@@ -10,7 +10,7 @@
 ```php
 <?php
 
-require 'kernel/autoload.php';
+require 'fleet/autoload.php';
 
 $route = new Router();
 
@@ -26,7 +26,7 @@ $route->run();
 ```php
 <?php
 
-require 'kernel/autoload.php';
+require 'fleet/autoload.php';
 
 $route = new Router();
 $route->map('/', 'className@actionName');
@@ -37,7 +37,7 @@ $route->run();
 ```php
 <?php
 
-require 'kernel/autoload.php';
+require 'fleet/autoload.php';
 
 $view = new View();
 $view->set('name', 'John Smith');
@@ -48,7 +48,7 @@ $view->render('main.php');
 ```php
 <?php
 
-require 'kernel/autoload.php';
+require 'fleet/autoload.php';
 
 $view = new View();
 $view->render('main.php', array(
@@ -60,7 +60,7 @@ $view->render('main.php', array(
 ```php
 <?php
 
-require 'kernel/autoload.php';
+require 'fleet/autoload.php';
 
 $route = new Router();
 $view = new View();
