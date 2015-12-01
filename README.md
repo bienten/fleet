@@ -1,4 +1,11 @@
 # Router
+##### route filters
+```
+'*' => '.+?'
+'i' => '[0-9]++'
+'s' => '[A-Za-z]++'
+'a' => '[0-9A-Za-z_-]++'
+```
 ##### callback route
 ```php
 <?php
@@ -9,8 +16,8 @@ $route = new Router();
 
 # url => /hello/world
 
-$route->map('/hello/(\w+)', function($who) {
-    echo "Hello {$who}";
+$route->map('/hello/[s:who]', function($param) {
+    echo "Hello {$param['who']}";
 });
 
 $route->run();
@@ -58,12 +65,12 @@ require 'kernel/autoload.php';
 $route = new Router();
 $view = new View();
 
-$route->map('/blog/(\w+)/page/(\d+)',
-    function($category, $page) use($view) {
+$route->map('/blog/[a:category]/page/[i:page]',
+    function($param) use($view) {
         $view->render('test.php', array(
             'title' => 'Blog Application',
-            'category' => $category,
-            'page' => $page
+            'category' => $param['category'],
+            'page' => $param['page']
         ));
     }
 );
