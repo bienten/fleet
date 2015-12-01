@@ -15,7 +15,7 @@ class Router {
         $this->routes[$pattern] = $callback;
     }
 
-    public function addFilter($filter) {
+    public function addFilter(array $filter) {
         $this->filter = array_merge($this->filter, $filter);
     }
 
