@@ -29,6 +29,6 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 
 ## Документация
 
-[Router](https://github.com/bienten/fleet/blob/master/docs/route.md)
-[View](https://github.com/bienten/fleet/blob/master/docs/view.md)
-[Example](https://github.com/bienten/fleet/blob/master/docs/example.md)
+- [Router](https://github.com/bienten/fleet/blob/master/docs/route.md)
+- [View](https://github.com/bienten/fleet/blob/master/docs/view.md)
+- [Example](https://github.com/bienten/fleet/blob/master/docs/example.md)
