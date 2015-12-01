@@ -1,37 +1,3 @@
-# Router
-##### route filters
-```
-'*' => '.+?'
-'i' => '[0-9]++'
-'s' => '[A-Za-z]++'
-'a' => '[0-9A-Za-z_-]++'
-```
-##### callback route
-```php
-<?php
-
-require 'fleet/autoload.php';
-
-$route = new Router();
-
-# url => /hello/world
-
-$route->map('/hello/[s:who]', function($param) {
-    echo "Hello {$param['who']}";
-});
-
-$route->run();
-```
-##### controller@action route
-```php
-<?php
-
-require 'fleet/autoload.php';
-
-$route = new Router();
-$route->map('/', 'className@actionName');
-$route->run();
-```
 # View
 ##### set option
 ```php
