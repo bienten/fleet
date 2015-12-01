@@ -1,6 +1,6 @@
-# Fleet Framework
+## Fleet Framework
 
-## Быстрый старт
+#### Быстрый старт
 
 ```php
 <?php
@@ -18,7 +18,7 @@ $route->map('/[s:hello]', function($param) use($view) {
 $route->run();
 ```
 
-## Apache
+#### Apache
 ```
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -27,7 +27,7 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 
 ```
 
-## Документация
+#### Документация
 
 - [Router](https://github.com/bienten/fleet/blob/master/docs/route.md)
 - [View](https://github.com/bienten/fleet/blob/master/docs/view.md)
