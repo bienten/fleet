@@ -32,3 +32,4 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 - [Router](https://github.com/bienten/fleet/blob/master/docs/route.md)
 - [View](https://github.com/bienten/fleet/blob/master/docs/view.md)
 - [Example](https://github.com/bienten/fleet/blob/master/docs/example.md)
+- [Pagination](https://github.com/bienten/fleet/blob/master/docs/pagination.md)
