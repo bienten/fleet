@@ -60,7 +60,7 @@ class Pagination {
     }
 
     private function _blocked($name) {
-        return "<span class=\"{$this->style['active']}\"> {$name} </span>";
+        return "<span class=\"{$this->style['blocked']}\"> {$name} </span>";
     }
 
     private function _active($url, $name) {
